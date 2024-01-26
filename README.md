@@ -10,20 +10,10 @@ Clone o projeto
   git clone https://github.com/lellismaria/password-validation-api.git
 ```
 
-Depois, certifique-se de ter os pacotes necessários instalados. Caso você não possua, instale utilizando os seguintes comandos:
+Depois, certifique-se de ter as bibliotecas necessárias instaladas. Caso você não possua, instale utilizando o seguinte comando:
 
 ```fastapi
-  pip install fastapi 
-```
-```pydantic
-  pip install pydantic
-```
-```uvicorn
-  pip install uvicorn
-```
-
-```uvicorn
-  pip install pytest
+  pip install -r requirements.txt
 ```
 
 Inicie o servidor
