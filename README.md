@@ -53,3 +53,64 @@ Inicie o servidor
   uvicorn main:app --reload
 ```
 
+
+## 📌 Uso do Endpoint /validate_password
+
+- Para utilizar a API, é necessário que você envie uma requisição do tipo POST para o endpoint "/validate_password", incluindo a senha que será validada no body. Essa ação vai permitir a verificação da senha fornecida com relação aos critérios que foram estabelecidos, tendo uma análise mais detalhada do processo de validação.
+
+- Para testar a aplicação é necessário que você possua o Insomnia ou Postman. No VsCode, caso queira, instale a extensão Thunder Client ou acesse a aplicação	pelo:
+
+```bash
+  http://localhost:8000/docs
+```
+
+## Como utilizar
+
+- Caso queira testar pelo Thunder Client, busque pela extensão no VsCode:
+
+<img src="https://imgur.com/GA3ZckE.png">
+
+- Clique na extensão:
+
+<img src="https://imgur.com/k3iJFRN.png">
+
+- Vamos criar uma nova requisição:
+
+<img src="https://imgur.com/uXFnrPC.png">
+
+- Vamos selecionar o método POST, digitar a URL com o Endpoint e passar um Body para ter o retorno esperado.
+
+- Para realizar essa requisição você deve passar o seguinte body:
+
+```bash
+  {
+	"password":"senha_aqui"
+  }
+```
+
+- ❌ Aqui está um exemplo de quando a senha tem algum caractere repetido: 
+
+<img src="https://imgur.com/LwoeSEJ.png">
+
+- ❌ Aqui está um outro exemplo de quando a senha não tem os caracteres suficientes: 
+
+<img src="https://imgur.com/039qaIe.png">
+
+- ❌ Temos outro exemplo de quando a senha não tem ao menos um caracter especial: 
+
+<img src="https://imgur.com/QvPgapr.png">
+
+- ❌ Um outro exemplo de quando a senha deve conter ao menos uma letra maiúscula:
+
+<img src="https://imgur.com/KlRptL9.png">
+
+- ❌ Um outro exemplo de quando a senha deve conter ao menos uma letra minúscula:
+
+<img src="https://imgur.com/j3pBh6l.png">
+
+- ✅ E por último um exemplo de quando a senha for válida:
+
+<img src="https://imgur.com/3JLdAjf">
+
+## 
+
