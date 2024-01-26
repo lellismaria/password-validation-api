@@ -22,11 +22,24 @@ Depois, certifique-se de ter os pacotes necessários instalados. Caso você não
   pip install uvicorn
 ```
 
+```uvicorn
+  pip install pytest
+```
+
 Inicie o servidor
 
 ```bash
   uvicorn main:app --reload
 ```
+
+## Rodando os testes
+
+Para rodar os testes, rode o seguinte comando:
+
+```bash
+  pytest ou pytest test_main.py
+```
+
 
 ## 📃 Regras
 
@@ -50,8 +63,6 @@ IsValid("AbTp9!foA") // false
 IsValid("AbTp9 fok") // false
 IsValid("AbTp9!fok") // true
 ```
-
-
 ## 📌 Uso do Endpoint /validate_password
 
 - Para utilizar a API, é necessário que você envie uma requisição do tipo POST para o endpoint "/validate_password", incluindo a senha que será validada no body. Essa ação vai permitir a verificação da senha fornecida com relação aos critérios que foram estabelecidos, tendo uma análise mais detalhada do processo de validação.
@@ -101,3 +112,7 @@ IsValid("AbTp9!fok") // true
 - Em resposta aos requisitos do desafio, optei por criar regras de validação de forma individual. Cada critério possui sua própria função, facilitando a manutenção e compreensão do código.
 - Adicionei um sistema de tratamento de erros, de modo que cada validação gera um código de erro específico, tornando mais claro o motivo pelo qual uma senha pode ser considerada fraca.
 - Caso a senha passe por todas as validações, a função retorna uma mensagem indicando que a senha é válida, proporcionando feedback positivo ao usuário.
+
+## 📐 Diagrama da API
+
+<img src="https://imgur.com/2LYJJf5.png">
