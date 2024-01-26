@@ -70,10 +70,6 @@ Inicie o servidor
 
 <img src="https://imgur.com/GA3ZckE.png">
 
-- Clique na extensão:
-
-<img src="https://imgur.com/k3iJFRN.png">
-
 - Vamos criar uma nova requisição:
 
 <img src="https://imgur.com/uXFnrPC.png">
