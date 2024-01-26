@@ -106,7 +106,7 @@ Inicie o servidor
 
 - ✅ E por último um exemplo de quando a senha for válida:
 
-<img src="https://imgur.com/3JLdAjf">
+<img src="https://imgur.com/3JLdAjf.png">
 
 ## 
 
